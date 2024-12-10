@@ -94,7 +94,7 @@ function WeekPane(props) {
 	}, []);
 
 	const onChangeWeekOfMonth = useCallback((v) => {
-		setWeekOfMonth(v || 1);
+		setWeekOfMonth(v>4?4:v || 1);
 	}, []);
 
 	const onChangeDayOfWeek = useCallback((v) => {
