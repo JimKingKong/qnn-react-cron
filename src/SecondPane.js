@@ -128,7 +128,7 @@ function SecondPane(props) {
         {donTAssign || '不指定'}
       </Radio>
 
-      <Radio style={radioStyle} value={2}>
+      {/* <Radio style={radioStyle} value={2}>
         {aTob.second ? (
           aTob.second(aTobA, aTobB)
         ) : (
@@ -136,7 +136,7 @@ function SecondPane(props) {
 						从&nbsp;{aTobA}&nbsp;-&nbsp;{aTobB}&nbsp;秒，每秒执行一次
 					</>
         )}
-      </Radio>
+      </Radio> */}
 
       <Radio style={radioStyle} value={3}>
         {aStartTob.second ? (
