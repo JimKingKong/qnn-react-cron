@@ -111,7 +111,7 @@ function MonthPane(props) {
     isFirstRender.current = false
   }, [])
 
-  const aTobA = <InputNumber disabled={currentRadio !== 2} min={1} max={12} value={from} size='small' onChange={onChangeFrom} style={{ width: 100 }} />
+  const aTobA = <InputNumber disabled={currentRadio !== 2} min={1} max={to || 12} value={from} size='small' onChange={onChangeFrom} style={{ width: 100 }} />
   const aTobB = <InputNumber disabled={currentRadio !== 2} min={from || 1} max={12} value={to} size='small' onChange={onChangeTo} style={{ width: 100 }} />
 
   const aStartTobA = <InputNumber disabled={currentRadio !== 3} min={1} max={12} value={offsetFrom} size='small' onChange={onChangeOffsetFrom} style={{ width: 100 }} />

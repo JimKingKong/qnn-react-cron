@@ -114,7 +114,7 @@ function DayPane(props) {
     isFirstRender.current = false
   }, [])
 
-  const aTobA = <InputNumber disabled={currentRadio !== 3} min={1} max={31} value={from} size='small' onChange={onChangeFrom} style={{ width: 100 }} />
+  const aTobA = <InputNumber disabled={currentRadio !== 3} min={1} max={to || 31} value={from} size='small' onChange={onChangeFrom} style={{ width: 100 }} />
   const aTobB = <InputNumber disabled={currentRadio !== 3} min={from || 1} max={31} value={to} size='small' onChange={onChangeTo} style={{ width: 100 }} />
 
   const aStartTobA = <InputNumber disabled={currentRadio !== 4} min={1} max={31} value={offsetFrom} size='small' onChange={onChangeOffsetFrom} style={{ width: 100 }} />

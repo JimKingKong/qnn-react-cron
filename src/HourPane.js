@@ -114,7 +114,7 @@ function HourPane(props) {
     isFirstRender.current = false
   }, [])
 
-  const aTobA = <InputNumber disabled={currentRadio !== 2} min={0} max={23} value={from} size='small' onChange={onChangeFrom} style={{ width: 100 }} />
+  const aTobA = <InputNumber disabled={currentRadio !== 2} min={0} max={to || 23} value={from} size='small' onChange={onChangeFrom} style={{ width: 100 }} />
   const aTobB = <InputNumber disabled={currentRadio !== 2} min={from || 0} max={23} value={to} size='small' onChange={onChangeTo} style={{ width: 100 }} />
 
   const aStartTobA = <InputNumber disabled={currentRadio !== 3} min={0} max={23} value={offsetFrom} size='small' onChange={onChangeOffsetFrom} style={{ width: 100 }} />
